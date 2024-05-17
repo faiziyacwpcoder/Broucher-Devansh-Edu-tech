@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brucher</title>
+  <style>
+   /* body {
+        
+        background-repeat: no-repeat;
+        background-attachment: fixed;  
+        background-size: cover;
+        height: 660px;
+        width: 1050px;
+    }*/
+    .grid-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 20px;
+        height: 690px;
+        width: 1050px;
+        background: fixed;
+        background-color:rgb(166, 92, 92) ;
+    }
+    
+    .box{
+
+      background-color: transparent; 
+       
+      height: 690px;
+      width: 340px;
+    }
+    .head{ 
+        position: absolute;
+        display: inline;
+        width: 340px;
+        height: 40px;
+        margin-top: 5px;
+        margin-left: 0px;
+        text-align: center;
+        font-weight: 15px;
+        font-size: 27px;
+        font-style:sans-serif;
+        color: whitesmoke;
+        
+    }
+    .left1{
+        position: relative;
+        border-top: 5px solid black;
+        border-bottom: 5px solid black;
+        border-radius: 5px;
+        background-color: rgb(151, 6, 6);
+        height: 220px;
+        width: 320px;
+        margin-top: 65px;
+        
+    
+    }
+    p{
+        font-size: 15px;
+        text-align: center;
+        font-weight: 4px;
+        color: whitesmoke;
+        display: inline;
+        position: absolute;
+    }
+   
+    .logh > img{
+        position: absolute;
+        display: inline;
+        width: 60px;
+        height: 60px;
+        margin-top: 10px;
+        margin-left: 7px;
+        
+        border-radius: 30%;
+        border: solid 3px;
+        border-color:black;
+        padding:5px ;
+    }
+    .logc > img{
+        position: absolute;
+        display: inline;
+        width: 60px;
+        height: 60px;
+        margin-top: 10px;
+        margin-left: 85px;
+        
+        border-radius: 30%;
+        border: solid 3px;
+        border-color:black;
+        padding:5px ;
+    }
+    .logj > img {
+        position: absolute;
+        display: inline;
+        width: 60px;
+        height: 60px;
+        margin-top: 10px;
+        margin-left:163px;
+        
+        border-radius: 30%;
+        border: solid 3px;
+        border-color:black;
+        padding:5px ;
+    }
+    .logq > img {
+        position: absolute;
+        display: inline;
+        width: 60px;
+        height: 60px;
+        margin-top: 10px;
+        margin-left: 240px;
+        
+        border-radius:30% ;
+        border: solid 3px;
+        border-color:black;
+        padding:5px ;
+    }
+    .logb > img {
+        position: absolute;
+        display: inline;
+        width: 60px;
+        height: 60px;
+        margin-top: 120px;
+        margin-left: 7px;
+        margin-bottom: 0px;
+        border-radius: 30%;
+        border: solid 3px;
+        border-color:black;
+        padding:5px ;
+    }
+    .logn > img {
+        position: absolute;
+        display: inline;
+        width: 60px;
+        height: 60px;
+        margin-top: 120px;
+        margin-left: 85px;
+        margin-bottom: 0px;
+        border-radius: 30%;
+        border: solid 3px;
+        border-color:black;
+        padding:5px ;
+    }
+    .logm > img {
+        position: absolute;
+        display: inline;
+        width: 60px;
+        height: 60px;
+        margin-top: 120px;
+        margin-left: 163px;
+        margin-bottom: 0px;
+        border-radius: 30%;
+        border: solid 3px;
+        border-color:black;
+        padding:5px ;
+    }
+    .logr > img {
+        position: absolute;
+        display: inline;
+        width: 60px;
+        height: 60px;
+        margin-top: 120px;
+        margin-left: 240px;
+        margin-bottom: 0px;
+        border-radius: 30%;
+        border: solid 3px;
+        border-color:black;
+        padding:5px ;
+    }
+    .hiding2{
+        position: relative;
+        width: 340px;
+        height: 80px;
+        margin-top: 15px;
+        margin-left: 0px;
+    }
+    h3{
+        font-size: 27px;
+        color: royalblue;
+        text-align:center ;
+        font-weight: 5px;
+        margin-bottom: 0px;
+        margin-top: 0px;
+        padding: 0px;
+        font-style:normal;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .cdecagone{
+      position: absolute;
+      margin-top: 20px;
+      height: 300px;
+      width: 330px;
+      background-color: transparent;
+      margin-top: 30px;
+      margin-left: 65px;
+      display: inline;
+    }
+    .c21{
+       position: absolute;
+       transform: translate(-50%, -50%);
+       width: 100px;
+       height: 100px;
+       background-color: whitesmoke;
+       clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
+       margin-top: 0px;
+       margin-left: 200px;
+    }
+    .c22{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90px;
+        height: 90px;
+        background-color:black;
+        clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
+            
+    }
+    .c23{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80px;
+        height: 80px;
+        background-color:rgb(151, 6, 6);
+        clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
+    }
+    .n1{ 
+        margin-top: 30px;  
+        text-align:center ;  
+        font-size: 20px; 
+        color:whitesmoke;
+        font-weight: 10px;
+    }
+    .c24{
+        position: absolute;
+        transform: translate(-50%, -50%);
+        width: 100px;
+        height: 100px;
+        background-color:white;
+        clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
+        margin-top: 75px;
+        margin-left: 105px;
+        }
+    .c25{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90px;
+        height: 90px;
+        background-color:black;
+        clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
+            
+    }
+    .c26{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80px;
+        height: 80px;
+        background-color:rgb(151, 6, 6);
+        clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
+            
+    }
+    .n2{ 
+        margin-top: 30px;  
+        text-align:center ;  
+        font-size: 20px; 
+        color:whitesmoke;
+        font-weight: 10px;
+    }
+    .c27{
+        position: absolute;
+        transform: translate(-50%, -50%);
+        width: 100px;
+        height: 100px;
+        background-color:white;
+        clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
+        margin-top: 160px;
+        margin-left: 10px;
+    }
+    .c28{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90px;
+        height: 90px;
+        background-color:black;
+        clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
+            
+    }
+    .c29{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80px;
+        height: 80px;
+        background-color:rgb(151, 6, 6);
+        clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
+            
+    }
+    .n3{ 
+        margin-top: 25px;  
+        text-align:center ;  
+        font-size: 15px; 
+        color:whitesmoke;
+    }
+    .c30{
+        position: absolute;
+        transform: translate(-50%, -50%);
+        width: 100px;
+        height: 100px;
+        background-color:white;
+        clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
+        margin-top: 0px;
+        margin-left: 10px;
+    }
+    .c31{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90px;
+        height: 90px;
+        background-color:black;
+        clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
+            
+    }
+    .c32{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80px;
+        height: 80px;
+        background-color:rgb(151, 6, 6);
+        clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
+            
+    }
+    .n4{ 
+        margin-top: 30px;  
+        text-align:center ;  
+        font-size: 20px; 
+        color:whitesmoke;
+    }
+    .c33{
+        position: absolute;
+        transform: translate(-50%, -50%);
+        width: 100px;
+        height: 100px;
+        background-color:white;
+        clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
+        margin-top: 160px;
+        margin-left: 200px;
+    }
+    .c34{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90px;
+        height: 90px;
+        background-color:black;
+        clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
+            
+    }
+    .c35{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80px;
+        height:80px;
+        background-color:rgb(151, 6, 6);
+        clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
+            
+    }
+    .n5{ 
+        margin-top: 25px;  
+        text-align:center ;  
+        font-size: 13px; 
+        color:whitesmoke;
+        font-weight: 7PX;
+    }
+    /*end box*/ 
+    .box1{
+        background-color:transparent;
+        color:whitesmoke ;
+        height: 690px;
+        width: 340px;        
+    }
+    .heading { 
+        grid-area: heading;
+        position: absolute;
+        width: 340px;
+        height: 80px;
+        margin-left: 115px;
+        margin-top: 45px;
+        display: inline;
+    }
+    .lugu > img{
+        position: absolute;
+        display: inline;
+        width: 50px;
+        height: 50px;
+        margin-top: 35px;
+        margin-left: 50px;
+        margin-bottom: 0px;
+        border-radius: 50%;
+        border: solid 3px;
+        border-color:rgb(215, 203, 203);
+        padding:3px ;
+    }
+    .feturs{
+        display: inline;
+        position: absolute;
+        margin-top: 95px;
+        margin-left: 15px;
+    }
+    ul,p{
+        list-style-type:square;
+        margin-left: 22px;
+        color: whitesmoke;
+    }
+    li,p{
+        margin-bottom: 7px;
+        margin-left: 0px;
+            
+    } 
+    .grid-pics{
+        display: grid;
+        height: 300px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 160px 160px;
+        background-color: black;
+        gap: 5px;
+        margin-top: 350px;
+        margin-left: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    }
+    .pic1 > img{
+        position: absolute;
+        display: inline;
+        width: 150px;
+        height: 120px;
+        border-radius: 10%;
+        border: solid 3px;
+        border-color:rgb(8, 43, 100);
+        margin-top: 5px;
+        padding: 0px;
+        
+
+    }
+    .pic2 > img {
+        position: absolute;
+        display: inline;
+        width: 150px;
+        height: 120px;
+        margin-left:10px ;
+        border-radius: 10%;
+        border: solid 3px;
+        border-color:rgb(8, 43, 100);
+        margin-top: 5px;
+
+    }
+    .pic3 > img {
+        position: absolute;
+        display: inline;
+        width: 150px;
+        height: 120px;
+        border-radius: 10%;
+        border: solid 3px;
+        border-color:rgb(8, 43, 100);
+        
+    }
+    .pic4 > img {
+        position: absolute;
+        display: inline;
+        width: 150px;
+        height: 120px;
+        margin-left:10px ;
+        border-radius: 10%;
+        border: solid 3px;
+        border-color:rgb(8, 43, 100);
+        
+    }
+    /*end box1*/
+    .box2{
+        background-color:transparent;
+        height: 690px;
+        width: 340px;
+    }
+    .head2 { 
+        position: absolute;
+        width: 320px;
+        height: 40px;
+        margin-top: 5px;
+        margin-left: 5px;
+        text-align: center;
+        font-weight: 13px;
+        font-size: 27px;
+        font-style:sans-serif;
+        color: whitesmoke;
+        display: inline;
+    }
+    .grid-content{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        position: relative;
+        border-top: 5px solid black;
+        border-bottom: 5px solid black;
+        border-radius: 5px;
+        background-color:rgb(151, 6, 6) ;
+        height: 220px;
+        width: 320px;
+        margin-top: 65px;
+        font-size: 16.5px;
+    }
+
+    .hiding3{
+        position: relative;
+        width: 340px;
+        height: 80px;
+        margin-top: 15px;
+        margin-left: 0px;
+    }
+    h3{
+        font-size: 27px;
+        color: whitesmoke;
+        text-align:center ;
+        font-weight: 5px;
+        margin-bottom: 0px;
+        margin-top: 0px;
+        padding: 0px;
+        font-style:normal;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .decagon{
+        position: relative;
+        margin-top: 20px;
+        height: 300px;
+        width: 330px;
+        background-color: transparent;
+    }
+       
+    .d1{
+        position: absolute;
+        transform: translate(-50%, -50%);
+        width: 100px;
+        height: 100px;
+        background-color:white;
+        clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
+        margin-top: 10px;
+        margin-left: 65px;
+        }
+    .d2{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90px;
+        height: 90px;
+        background-color:black;
+        clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
+            
+    }
+    .d11{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80px;
+        height: 80px;
+        background-color:rgb(151, 6, 6);
+        clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
+            
+    }
+    .nm1{
+        margin-top: 25px;  
+        text-align:center ;  
+        font-size: 13px; 
+        color:whitesmoke;
+        font-weight: 7PX;
+    }
+    .d3{
+        position: absolute;
+        transform: translate(-50%, -50%);
+        width: 100px;
+        height: 100px;
+        background-color:white;
+        clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
+        margin-top: 10px;
+        margin-left: 260px;
+    }
+    .d4{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90px;
+        height: 90px;
+        background-color:black;
+        clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
+            
+    }
+    .d12{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80px;
+        height: 80px;
+        background-color:rgb(151, 6, 6);
+        clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
+            
+    }
+    .nm2{
+        margin-top: 25px;  
+        text-align:center ;  
+        font-size: 13px; 
+        color:whitesmoke;
+        font-weight: 7PX;
+    }
+    .d5{
+        position: absolute;
+        transform: translate(-50%, -50%);
+        width: 100px;
+        height: 100px;
+        background-color:white;
+        clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
+        margin-top: 90px;
+        margin-left: 160px;
+    }
+    .d6{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90px;
+        height: 90px;
+        background-color:black;
+        clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
+            
+    }
+    .d13{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80px;
+        height: 80px;
+        background-color:rgb(151, 6, 6);
+        clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
+            
+    }
+    .nm3{
+        margin-top: 25px;  
+        text-align:center ;  
+        font-size: 13px; 
+        color:whitesmoke;
+        font-weight: 7PX;
+    }
+    .d7{
+        position: absolute;
+        transform: translate(-50%, -50%);
+        width: 100px;
+        height: 100px;
+        background-color:white;
+        clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
+        margin-top: 170px;
+        margin-left: 65px;
+    }
+    .d8{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90px;
+        height: 90px;
+        background-color:black;
+        clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
+            
+    }
+    .d14{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80px;
+        height: 80px;
+        background-color:rgb(151, 6, 6);
+        clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
+            
+    }
+    .nm4{
+        margin-top: 25px;  
+        text-align:center ;  
+        font-size: 13px; 
+        color:whitesmoke;
+        font-weight: 7PX;
+    }
+    .d9{
+        position: absolute;
+        transform: translate(-50%, -50%);
+        width: 100px;
+        height: 100px;
+        background-color:white;
+        clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
+        margin-top: 170px;
+        margin-left: 260px;
+    }
+    .d10{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90px;
+        height: 90px;
+        background-color:black;
+        clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
+          
+    }
+    .d15{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80px;
+        height: 80px;
+        background-color:rgb(151, 6, 6);
+        clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
+            
+    }
+    .nm5{
+        margin-top: 25px;  
+        text-align:center ;  
+        font-size: 13px; 
+        color:whitesmoke;
+        font-weight: 7PX;
+    }
+    footer{
+        position: relative;
+        margin-top: 0px;
+        height: 40px;
+        width: 340px;
+        background-color:rgb(2, 70, 148);
+        text-align: center;
+        font-size: 14px;
+    }
+
+    </style>
+</head>
+<body>
+  <div class="grid-container">
+      <div class=" box">
+           <div class="head"> WEB DEVELOPMENT
+                <hr style=" width: 300px; border-top:3px dotted whitesmoke; margin-top: 3px; ">
+           </div>
+          <div class="left1">
+                <div class="logh">
+                  <img src="./hml.jpeg" alt="html logo">
+                  <p style="margin-left: 25px; margin-top: 85px;">HTML</p>
+                </div>
+                <div class="logc">
+                  <img src="./CSS.png" alt="css logo">
+                  <P style="margin-left: 107px; margin-top: 85px;">CSS</P>
+                </div>
+                <div class="logj">
+                  <img src="./js.jpeg" alt="js">
+                  <P style="margin-left:190px ; margin-top: 85px;">JS</P>
+                </div>
+                <div class="logq">
+                  <img src="./q.jpeg" alt="query log">
+                  <P style="margin-left: 248px; margin-top: 85px;">JQUERY</P>
+                </div>
+               <div class="logb">
+                  <img src="./bs.jpeg" alt="strap log">
+                  <p style="margin-top: 195px; margin-left: 30px;">B.S</p>
+                </div>
+                <div class="logn">
+                  <img src="./no.jpeg" alt="nj log">
+                  <P style="margin-left: 90px; margin-top: 195px;">NODE JS</P>
+                </div>
+                <div class="logm">
+                  <img src="./m.jpeg" alt="mdb log">
+                  <P style="margin-top: 195px; margin-left: 163px; ; ">MONGODB</P>
+                </div>
+                <div class="logr">
+                  <img src="./reactw.jpeg" alt="ract log">
+                  <P style="margin-left: 248px; margin-top: 195px;">REACT JS</P>
+                </div>
+          </div>
+          <div class="hiding2">
+                <h3>Other Courses</h3>
+                <hr style="width:170px; height: 3px solid white; margin-left: 85px; margin-top: 0px;">
+          </div>
+          <div class="cdecagone">    
+                <div class="c21">
+                    <div class="c22">
+                        <div class="c23">
+                            <div class="n1">JAVA</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="c24">
+                    <div class="c25">
+                        <div class="c26">
+                            <div class="n2">C,C++</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="c27">
+                    <div class="c28">
+                        <div class="c29">
+                            <div class="n3">MACHINE <br>LEARNING</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="c30">
+                    <div class="c31">
+                        <div class="c32">
+                            <div class="n4">CCC</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="c33">
+                    <div class="c34">
+                        <div class="c35">
+                            <div class="n5">DATA<br>STRUCTURE</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+      </div>
+      <div class= "box1">
+          <div class="lugu"><img src="./devlogo.jpeg" alt="logo"> </div>
+          <div class="heading">
+                <h1 style="font-size: 28px; padding: 0px; margin-top: 0px; margin-bottom:0px; text-shadow: 5px 3px 5px gray; color:rgb(8, 43, 100);">DEVANSH</h1>
+                <p style="font-size: 12px; padding: 0px; margin-top: 0px;">COMPUTER EDUCATION</p>
+         </div>
+          <div class="feturs">
+               <h2 style="font-size: 36; padding: 0px; margin-top: 15px; margin-bottom: 0px; margin-left: 10px;">Salient Features</h2>
+               <hr style="width: 165px; margin-left: 10px; border: 3px dotted rgb(8, 43, 100);">
+               <p>
+                 <ul>
+                     <li>LEARN FROM EXPERTS</li>
+                     <li>REAL TIME PROJECTS</li>
+                     <li>AC CLASS ROOMS</li>
+                     <li>FREE STUDY MATERIAL</li>
+                     <li> INDIVISUAL COMPUTERS <BR>FOR EACH STUDENT</BR></li>
+                     <li>100% PLACEMENT ASISTANCE</li>
+                  </ul>
+              </p>
+          </div>
+          <div class="grid-pics">
+              <div class="pic1">
+                 <img src="classpic.heic" alt="photo">
+              </div>
+              <div class="pic2">
+                 <img src="classpic1.heic" alt="photo">
+              </div>
+              <div class="pic3">
+                 <img src="classpic2.heic" alt="photo">
+              </div>
+              <div class="pic4">
+                 <img src="b.jpeg" alt="photo">
+              </div>
+         </div>
+         <footer>
+            +91 94208 07993 <br> Dalvi Complex, 2nd Floor, New Mondha, Parbhani.
+         </footer>
+     </div>
+     <div class="box2">
+          <div class="head2">PYTHON DEVELOPMENT
+              <hr style=" width: 320px; border-top:3px dotted whitesmoke; margin-top: 3px; margin-left: 0px; ">
+           </div>
+         <div class="grid-content">
+             <div class="pds">
+                 <ul>
+                     <li>Python Scripting</li>
+                     <li>Automation</li>
+                     <li>Web Scraping</li>
+                     <li>Selenium Web Driver</li>
+                     <li>Data Science </li>
+                     <li>Pandas</li>
+                  </ul>
+              </div>
+              <div class="list">
+                  <ul>
+                     <li>NumPy</li>
+                     <li>Plotly</li>
+                     <li>Tkinter</li>
+                     <li>Front-End Web Dev</li>
+                     <li>GitHub</li>
+                     <li>Flask</li>
+                     <li>SQlite</li>
+                   </ul>
+              </div>
+         </div> 
+         <div class="hiding3">
+            <h3>Other Courses</h3>
+            <hr style="width:170px; height: 3px solid white; margin-left: 85px; margin-top: 0px;">
+         </div>
+         <div class="decagon">    
+             <div class="d1">
+                 <div class="d2">
+                     <div class="d11">
+                         <div class="nm1">APP <br> DEVELOPMENT</div>
+                     </div>
+                 </div>
+             </div>
+             <div class="d3">
+                 <div class="d4">
+                     <div class="d12">
+                         <div class="nm2">DIGITAL <br> MARKETING</div>
+                     </div>
+                 </div>
+             </div>
+             <div class="d5">
+                 <div class="d6">
+                     <div class="d13">
+                         <div class="nm3">NUMERICAL <br> APTITUDE</div>
+                     </div>
+                 </div>
+             </div>
+             <div class="d7">
+                 <div class="d8">
+                     <div class="d14">
+                         <div class="nm4">LOGICAL <br> RESONING</div>
+                     </div>
+                 </div>
+             </div>
+             <div class="d9">
+                 <div class="d10">
+                     <div class="d15">
+                         <div class="nm5">INTERVIEW <br> PREPARATION</div>
+                     </div>
+                 </div>
+             </div>
+          </div>
+       </div>
+  </div>     
+</body>
+</html>
